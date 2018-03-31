@@ -1,4 +1,4 @@
-"""first_project URL Configuration
+"""second_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
@@ -13,16 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# Adding url and include pakage
-from django.conf.urls import url, include
 from django.contrib import admin
-# from django.urls import path
-# Adding HomeView from first app views
-from first_app.views import HomeView
+from django.urls import path
 
-# Adding HomeView to urlpatterns
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view()),
+    path('admin/', admin.site.urls),
 ]
