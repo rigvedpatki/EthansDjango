@@ -1,0 +1,17 @@
+body {
+  background-image: url(https://wallpapershome.com/images/pages/pic_h/17697.jpg);
+  background-repeat: repeat;
+}
+
+div {
+  background-color: rebeccapurple;
+  border: peachpuff dotted;
+  border-width: 10px;
+}
+p {
+    color: orangered;
+}
+span {
+    background-color: powderblue;
+    color: moccasin;
+}
