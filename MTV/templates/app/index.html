@@ -1,0 +1,61 @@
+<!DOCTYPE html> {% load staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <title>Django MTV</title>
+</head>
+
+<body>
+    <h1>MTV Paradigm</h1>
+    <h2>Here are the access records: </h2>
+    <div>
+        {% if access_records %}
+        <table>
+            <thead>
+                <th>Site Name</th>
+                <th>Date Accessed</th>
+            </thead>
+            <tbody>
+                {% for access_record in access_records %}
+                <tr>
+                    <td>
+                        {{access_record.name}}
+                    </td>
+                    <td>
+                        {{access_record.date}}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No Access Records found !!! </p>
+        {% endif %}
+    </div>
+
+    <h2>Here are topic records: </h2>
+    {% if topic_records %}
+    <table>
+        <thead>
+            <th>Topics</th>
+        </thead>
+        <tbody>
+            {% for topic_record in topic_records %}
+            <tr>
+                <td>{{topic_record.top_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+    {% else %}
+    <p>No topics found !!</p>
+    {% endif %}
+
+</body>
+
+</html>
