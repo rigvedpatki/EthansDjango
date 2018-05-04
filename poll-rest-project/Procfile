@@ -1,1 +1,1 @@
-web: gunicorn pollsRestApi.wsgi
+web: cd pollsRestApi; gunicorn pollsRestApi.wsgi
