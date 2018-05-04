@@ -17,7 +17,7 @@
     "bootstrap-vue": "latest",
     "express": "^4.16.3",
     "express-force-https": "^1.0.0",
-    "jquery": "1.9.1",
+    "jquery": "^3.3.1",
     "popper.js": "^1.12.9",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
