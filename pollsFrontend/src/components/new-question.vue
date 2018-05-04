@@ -105,7 +105,7 @@ export default {
                   vote_count: 0
                 })
                 .then(response => {
-                  console.log(response)
+                  // console.log(response)
                 })
             })
             this.$router.push('/')

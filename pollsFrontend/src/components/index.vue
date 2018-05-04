@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <b-card header="Polls Application" title="List of Questions : " class="m-5" bg-variant="light">
+    <b-card header="Polling Application" title="List of Questions : " class="m-5" bg-variant="light">
       <b-list-group v-if="listOfQuestions">
         <b-list-group-item v-for=" question in listOfQuestions" :key="question.id" :href="'question/'+question.id">{{question.question_text}}</b-list-group-item>
       </b-list-group>
